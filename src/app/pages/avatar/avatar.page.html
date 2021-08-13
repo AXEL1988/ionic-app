@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Regresar" mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">avatar</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <ion-img src="/assets/stan-lee.jpg"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeSm="11" sizeMd="10" sizeLg="8" sizeXl="6">
+        <ion-chip color="primary" mode="ios" outline="true">
+          <ion-label>Default</ion-label>
+        </ion-chip>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col sizeXs="12" sizeSm="11" sizeMd="10" sizeLg="8" sizeXl="6">
+        <ion-list>
+          <ion-item *ngFor="let item of [1,1,1]">
+            <ion-avatar slot="start">
+              <ion-img src="/assets/stan-lee.jpg"></ion-img>
+            </ion-avatar>
+            <label>Avatar Stan Lee</label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
