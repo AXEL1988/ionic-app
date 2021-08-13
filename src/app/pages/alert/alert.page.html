@@ -1,3 +1,18 @@
 <app-header titulo="alert"></app-header>
 <ion-content>
+<ion-grid fixed>
+  <ion-row class="ion-justify-content-center">
+    <ion-col sizeXs="12" sizeSm="11" sizeMd="10" sizeLg="8" sizeXl="6">
+      <ion-button (click)="presentAlert()" expand="block">
+        PresentAlert
+      </ion-button>
+      <ion-button (click)="presentAlertMultipleButton()" expand="block">
+        presentAlertMultipleButtons
+      </ion-button>
+      <ion-button (click)="presentAlertConfirms()" expand="block">
+        presentAlertConfirm
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
