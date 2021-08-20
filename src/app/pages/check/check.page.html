@@ -1,0 +1,12 @@
+<app-header titulo="Personajes"></app-header>
+<ion-content>
+  <ion-list class="ion-padding">
+    <ion-item>
+      <ion-label color="primary">Seleccion los personales que conoce</ion-label>
+    </ion-item>
+    <ion-item *ngFor="let person of persons">
+      <ion-label>{{person.name}}</ion-label>
+      <ion-checkbox [color]="person.name" [(ngModel)]="person.selected" slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
